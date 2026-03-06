@@ -57,6 +57,7 @@ jobs:
         run: |
           mkdir -p allure-report/coverage
           cp -r coverage-html/. allure-report/coverage/ || echo "Warning: coverage-html not found or empty, skipping copy"
+          rm -f allure-report/coverage/.gitignore
         if: always()
 
       - name: Debug allure-report/coverage
