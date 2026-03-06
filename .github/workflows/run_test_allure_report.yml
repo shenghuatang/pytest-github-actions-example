@@ -36,6 +36,11 @@ jobs:
           pytest --alluredir=allure-results --cov=. --cov-report=xml --cov-report=html:coverage-html -v -s
         continue-on-error: true
 
+      - name: Check coverage-html output
+        run: |
+          ls -la coverage-html || echo "coverage-html directory NOT found!"
+        if: always()
+
       - name: Install Allure CLI
         run: |
           wget -q https://github.com/allure-framework/allure2/releases/download/2.27.0/allure-2.27.0.tgz
@@ -49,7 +54,7 @@ jobs:
 
       - name: Move coverage HTML into Allure report directory
         run: |
-          cp -r coverage-html allure-report/coverage 2>/dev/null || true
+          cp -r coverage-html allure-report/coverage
         if: always()
 
       - name: Upload Allure Report as Artifact
