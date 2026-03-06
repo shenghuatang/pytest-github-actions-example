@@ -51,10 +51,16 @@ jobs:
       - name: Generate Allure Report
         run: |
           allure generate allure-results --clean -o allure-report
+        continue-on-error: true
 
       - name: Move coverage HTML into Allure report directory
         run: |
-          cp -r coverage-html allure-report/coverage
+          mkdir -p allure-report/coverage
+          cp -r coverage-html/. allure-report/coverage/ || echo "Warning: coverage-html not found or empty, skipping copy"
+        if: always()
+
+      - name: Debug allure-report/coverage
+        run: ls -la allure-report/coverage || echo "allure-report/coverage does NOT exist"
         if: always()
 
       - name: Upload Allure Report as Artifact
