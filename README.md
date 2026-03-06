@@ -5,7 +5,7 @@ This repo contains the sample code for the article - [Automated Python Unit Test
 This project explains how to automate the testing of your Python code using PyTest and GitHub Actions.
 
 # Requirements
-* Python (3.10.10)
+* Python (3.13.0)
 
 Please install the dependencies via the `requirements.txt` file using 
 ```commandline
