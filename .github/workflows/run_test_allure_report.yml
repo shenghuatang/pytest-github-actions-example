@@ -1,7 +1,7 @@
 name: Run Unit Test via Pytest Allure
 
 on:
-  push:
+  #push:
   workflow_dispatch:
 
 jobs:
