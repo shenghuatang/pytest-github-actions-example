@@ -1,25 +1,25 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","3","tests.unit","test_license_checker","TestLicenseExpired","","","test_playsound_called_with_correct_file",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","3","tests.unit","test_license_checker","TestLicenseBadDateFormat","","","test_raises_value_error_on_wrong_format",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","3","tests.unit","test_license_checker","TestLicenseValid","","","test_prints_days_remaining",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","22","tests.unit","test_license_checker","TestLicenseValid","","","test_returns_true_when_not_expired",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","3","tests.unit","test_license_checker","TestLicenseExpired","","","test_custom_duration_valid","Custom longer license (730 days) -> 400 days old -> still valid."
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","3","tests.unit","test_license_checker","TestLicenseExpired","","","test_playsound_called_exactly_twice",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","0","tests.unit","test_area","","","","test_calculate_area_square_list",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","3","tests.unit","test_license_checker","TestLicenseValid","","","test_valid_one_day_before_expiry","Installed 364 days ago -> 1 day left -> still valid.
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","0","tests.unit","test_license_checker","TestLicenseFileNotFound","","","test_raises_file_not_found",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","2","tests.unit","test_license_checker","TestLicenseBadDateFormat","","","test_raises_value_error_on_wrong_format",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","3","tests.unit","test_license_checker","TestLicenseBadDateFormat","","","test_raises_value_error_on_bad_date",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","3","tests.unit","test_license_checker","TestLicenseExpired","","","test_custom_duration_valid","Custom longer license (730 days) -> 400 days old -> still valid."
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","3","tests.unit","test_license_checker","TestLicenseExpired","","","test_returns_false_when_expired",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","0","tests.unit","test_area","","","","test_calculate_area_square_string",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","21","tests.unit","test_license_checker","TestLicenseValid","","","test_returns_true_when_not_expired",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","2","tests.unit","test_license_checker","TestLicenseValid","","","test_valid_one_day_before_expiry","Installed 364 days ago -> 1 day left -> still valid.
 
 Note: datetime.today() carries the current wall-clock time, so an
 install date of exactly -365 days produces expiry_date at midnight
 *today*, which is already in the past.  Using -364 guarantees there
 is always at least one day remaining regardless of time-of-day.
 "
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","1","tests.unit","test_license_checker","TestLicenseFileNotFound","","","test_playsound_not_called_when_file_missing",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","0","tests.unit","test_area","","","","test_calculate_area_square_string",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","0","tests.unit","test_license_checker","TestLicenseFileNotFound","","","test_raises_file_not_found",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","2","tests.unit","test_license_checker","TestLicenseBadDateFormat","","","test_raises_value_error_on_bad_date",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","3","tests.unit","test_license_checker","TestLicenseExpired","","","test_returns_false_when_expired",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","5","tests.unit","test_license_checker","TestLicenseExpired","","","test_custom_duration_expired","Custom shorter license (30 days) -> 31 days old -> expired."
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","1","tests.unit","test_area","","","","test_calculate_area_square",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","1","tests.unit","test_area","","","","test_calculate_area_square_negative",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","1","tests.unit","test_license_checker","TestLicenseFileNotFound","","","test_error_message_contains_filename",""
-"passed","Tue Mar 17 15:57:32 UTC 2026","Tue Mar 17 15:57:32 UTC 2026","3","tests.unit","test_license_checker","TestLicenseExpired","","","test_prints_expiry_message",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","3","tests.unit","test_license_checker","TestLicenseExpired","","","test_playsound_called_exactly_twice",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","3","tests.unit","test_license_checker","TestLicenseValid","","","test_prints_days_remaining",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","0","tests.unit","test_area","","","","test_calculate_area_square",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","3","tests.unit","test_license_checker","TestLicenseExpired","","","test_prints_expiry_message",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","0","tests.unit","test_license_checker","TestLicenseFileNotFound","","","test_error_message_contains_filename",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","1","tests.unit","test_license_checker","TestLicenseFileNotFound","","","test_playsound_not_called_when_file_missing",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","3","tests.unit","test_license_checker","TestLicenseExpired","","","test_playsound_called_with_correct_file",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","1","tests.unit","test_area","","","","test_calculate_area_square_negative",""
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","5","tests.unit","test_license_checker","TestLicenseExpired","","","test_custom_duration_expired","Custom shorter license (30 days) -> 31 days old -> expired."
+"passed","Tue Mar 17 16:15:23 UTC 2026","Tue Mar 17 16:15:23 UTC 2026","0","tests.unit","test_area","","","","test_calculate_area_square_list",""
