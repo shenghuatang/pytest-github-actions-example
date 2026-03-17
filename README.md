@@ -27,3 +27,8 @@ If you have any questions about the project please raise an Issue on GitHub.
 The full coverage report is available at: [https://shenghuatang.github.io/pytest-github-actions-example/coverage](https://shenghuatang.github.io/pytest-github-actions-example/coverage/)
 
 unit test report is under https://shenghuatang.github.io/pytest-github-actions-example/
+
+
+# reference
+
+https://queirozf.com/entries/python-unittest-examples-mocking-and-patching
